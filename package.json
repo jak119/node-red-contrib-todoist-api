@@ -1,6 +1,6 @@
 {
   "name": "@jak119/node-red-contrib-todoist-api",
-  "version": "0.0.1",
+  "version": "0.0.2-1",
   "description": "Todoist API interaction nodes for Node-RED",
   "node-red": {
     "nodes": {
@@ -41,6 +41,7 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "eslint": "^8.10.0"
+    "eslint": "^8.10.0",
+    "release-it": "^15.6.0"
   }
 }

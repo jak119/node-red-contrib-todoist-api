@@ -1,0 +1,8 @@
+{
+  "npm": {
+    "publish": false
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
