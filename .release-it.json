@@ -1,6 +1,6 @@
 {
   "npm": {
-    "ignoreVersion": true
+    "publish": false
   },
   "publishConfig": {
     "access": "public"
