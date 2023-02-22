@@ -1,7 +1,16 @@
 # @jak119/node-red-contrib-todoist-api
 
+Fork of foxleigh81/node-red-contrib-todoist-api to bump the API version to v2
+
+## To Do
+
+- [X] Bump the Todoist API to v2
+- [X] Update dependencies
+- [] Add a node for the sync API
+
 <details>
   <summary>Original Markdown</summary>
+
 # @foxleigh81/node-red-contrib-todoist-api
 
 ![npm](https://img.shields.io/npm/dm/@foxleigh81/node-red-contrib-todoist-api)
