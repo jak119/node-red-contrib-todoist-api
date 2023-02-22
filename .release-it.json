@@ -1,6 +1,6 @@
 {
   "git": {
-    "commitMessage": "Chore: Release ${version}",
+    "commitMessage": "Chore: Release ${version}"
   },
   "npm": {
     "publish": true
