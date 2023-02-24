@@ -10,9 +10,7 @@ module.exports = function (RED) {
     node.on("input", function (msg) {
       var options = {
         token,
-        endpoint: msg.payload.endpoint,
-        method: msg.payload.method,
-        data: msg.payload.data || {}
+        data: msg.payload || {}
       };
       todoistSync(options)
         .then(function (response) {
