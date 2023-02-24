@@ -1,5 +1,5 @@
 module.exports = function (RED) {
-  var todoistQuery = require("../lib/todoist-sync");
+  var todoistSync = require("../lib/todoist-sync");
   function TodoistSyncAPI(config) {
     RED.nodes.createNode(this, config);
 
@@ -14,7 +14,7 @@ module.exports = function (RED) {
         method: msg.payload.method,
         data: msg.payload.data || {}
       };
-      todoistQuery(options)
+      todoistSync(options)
         .then(function (response) {
           msg.payload = response;
           msg.response = response;

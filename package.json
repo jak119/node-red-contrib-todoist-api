@@ -12,7 +12,8 @@
       "todoist-task-complete": "./nodes/complete-task.js",
       "todoist-task-reopen": "./nodes/reopen-task.js",
       "todoist-task-delete": "./nodes/delete-task.js",
-      "todoist-query-api": "./nodes/query.js"
+      "todoist-query-api": "./nodes/query.js",
+      "todoist-sync-api": "./nodes/sync.js"
     }
   },
   "license": "MIT",
