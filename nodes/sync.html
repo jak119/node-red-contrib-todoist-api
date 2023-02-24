@@ -1,0 +1,46 @@
+<script type="text/javascript">
+  RED.nodes.registerType("todoist-sync-api", {
+    category: "Todoist",
+    icon: "icons/todoist.png",
+    color: "#db4c3f",
+    defaults: {
+      name: { value: "" },
+      token: {
+        type: "add-todoist-api-token"
+      }
+    },
+    inputs: 1,
+    outputs: 1,
+    label: function () {
+      return this.name || "Sync API";
+    },
+    paletteLabel: "Custom API query"
+  });
+</script>
+
+<script type="text/html" data-template-name="todoist-sync-api">
+  <div class="form-row">
+    <label for="node-input-token"><i class="fa fa-key"></i> Select Token</label>
+    <input type="text" id="node-input-token" />
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name" />
+  </div>
+</script>
+
+<script type="text/markdown" data-help-name="todoist-sync-api">
+  Send any query to the Todoist Sync API. The query is sent as a JSON payload, which looks like this:
+
+  ```json
+    {
+      "type": "reminder_add",
+      "temp_id": "e24ad822-a0df-4b7d-840f-83a5424a484a",
+      "uuid": "41e59a76-3430-4e44-92b9-09d114be0d49",
+      "args": {
+          "item_id": "2995104339",
+          "minute_offset": 30
+      }
+    }
+  ```
+</script>
