@@ -1,6 +1,6 @@
 module.exports = function (RED) {
-  var todoistQuery = require("../lib/todoist-query");
-  function TodoistQueryAPI(config) {
+  var todoistQuery = require("../lib/todoist-sync");
+  function TodoistSyncAPI(config) {
     RED.nodes.createNode(this, config);
 
     var node = this;
@@ -29,5 +29,5 @@ module.exports = function (RED) {
         });
     });
   }
-  RED.nodes.registerType("todoist-sync-api", TodoistQueryAPI);
+  RED.nodes.registerType("todoist-sync-api", TodoistSyncAPI);
 };
