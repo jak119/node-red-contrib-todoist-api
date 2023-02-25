@@ -3,6 +3,6 @@
     "commitMessage": "Chore: Release ${version}"
   },
   "npm": {
-    "publish": true
+    "publish": false
   }
 }
