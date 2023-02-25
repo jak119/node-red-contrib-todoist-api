@@ -1,6 +1,6 @@
 {
   "name": "@jak119/node-red-contrib-todoist-api",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Todoist API interaction nodes for Node-RED",
   "node-red": {
     "nodes": {
